@@ -9,10 +9,15 @@ describe 'csv-map-parser', ->
           expect(parser.single('key1:value1,key2:value2'))
             .to.eventually.deep.equal(key1: 'value1', key2: 'value2')
 
+      context 'with a space', ->
+        it 'returns a map', ->
+          expect(parser.single('key1:value1, key2:value2'))
+            .to.eventually.deep.equal(key1: 'value1', key2: 'value2')
+
       context 'with spaces', ->
         it 'returns a map', ->
-          expect(parser.single(' key1: value1, key2: value2 '))
-            .to.eventually.deep.equal(key1: 'value1', key2: 'value2')
+          expect(parser.single(' key1: value1, key2 : value2 '))
+            .to.eventually.deep.equal(key1: ' value1', 'key2 ': ' value2')
 
     context 'with quotes', ->
       context 'without spaces', ->
@@ -22,5 +27,5 @@ describe 'csv-map-parser', ->
 
       context 'with spaces', ->
         it 'returns a map', ->
-          expect(parser.single(' "key1 : value1 ", "key2 : value2" '))
-            .to.eventually.deep.equal(key1: 'value1', key2: 'value2')
+          expect(parser.single(' "key1: value1 ", "key2 : value2" '))
+            .to.eventually.deep.equal(key1: ' value1 ', 'key2 ': ' value2')
