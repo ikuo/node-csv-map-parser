@@ -7,6 +7,7 @@ A parser of key value pairs encoded into CSV.
 Install with [npm](https://www.npmjs.com/):
 
 ```shell
+npm install coffee-script -g
 npm install csv-map-parser --save
 ```
 

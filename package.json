@@ -4,8 +4,8 @@
   "main": "lib/index.js",
   "version": "0.0.0-semantic-release",
   "scripts": {
-    "test": "mocha",
-    "install": "./node_modules/coffee-script/bin/coffee -bco lib/ src/",
+    "test": "(mocha && rm -rf ./target && mkdir target && cd target && npm install ../ --save)",
+    "install": "coffee -bco lib/ src/",
     "semantic-release": "semantic-release pre && npm publish && semantic-release post"
   },
   "repository": {
@@ -21,7 +21,7 @@
   "devDependencies": {
     "chai": "^3.3.0",
     "chai-as-promised": "^5.1.0",
-    "coffee-script": "~1.10.0",
+    "coffee-script": "^1.10.0",
     "mocha": "^2.3.3",
     "semantic-release": "^4.3.5"
   },
