@@ -16,6 +16,7 @@ npm install lcsv-parser --save
 ```coffeescript
 parser = require('lcsv-parser')
 parser.single('key1:value1, key2:value2')
+  .then(function (obj) { console.log(obj) });
 # => { key1: 'value1', key2: 'value2' }
 ```
 
