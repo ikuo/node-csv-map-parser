@@ -1,6 +1,6 @@
 {
   "name": "lcsv-parser",
-  "description": "A parser of key value pairs encoded into CSV (Labeled CSV)",
+  "description": "A parser of key value pairs encoded in 'labeled' CSV format",
   "main": "lib/index.js",
   "version": "0.0.0-semantic-release",
   "scripts": {

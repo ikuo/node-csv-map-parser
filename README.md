@@ -1,6 +1,6 @@
 # node-lcsv-parser
 
-A parser of key value pairs encoded into CSV (Labeled CSV).
+A parser of key value pairs encoded in 'labeled' CSV format.
 
 ## Installation
 
