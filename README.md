@@ -1,6 +1,6 @@
-# csv-map-parser
+# node-lcsv-parser
 
-A parser of key value pairs encoded into CSV.
+A parser of key value pairs encoded into CSV (Labeled CSV).
 
 ## Installation
 
@@ -8,13 +8,13 @@ Install with [npm](https://www.npmjs.com/):
 
 ```shell
 npm install coffee-script -g
-npm install csv-map-parser --save
+npm install lcsv-parser --save
 ```
 
 ## Example
 
 ```coffeescript
-parser = require('csv-map-parser')
+parser = require('lcsv-parser')
 parser.parse('key1:value1, key2:value2')
 # => { key1: 'value1', key2: 'value2' }
 ```

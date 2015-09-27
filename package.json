@@ -1,6 +1,6 @@
 {
-  "name": "csv-map-parser",
-  "description": "A parser of key value pairs encoded into CSV",
+  "name": "lcsv-parser",
+  "description": "A parser of key value pairs encoded into CSV (Labeled CSV)",
   "main": "lib/index.js",
   "version": "0.0.0-semantic-release",
   "scripts": {
@@ -10,11 +10,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/ikuo/node-csv-map-parser.git"
+    "url": "https://github.com/ikuo/node-lcsv-parser.git"
   },
   "keywords": [
     "csv",
-    "map"
+    "map",
+    "parser"
   ],
   "author": "Ikuo Matsumura <makiczar@gmail.com>",
   "license": "MIT",

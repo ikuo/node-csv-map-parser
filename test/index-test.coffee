@@ -1,7 +1,7 @@
 expect = require('chai').use(require('chai-as-promised')).expect
 parser = require('../src')
 
-describe 'csv-map-parser', ->
+describe 'lcsv-parser', ->
   context '#single', ->
     context 'without quotes', ->
       context 'without spaces', ->
