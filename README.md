@@ -1,5 +1,8 @@
 # node-lcsv-parser
 
+[![npm version](https://badge.fury.io/js/lcsv-parser.svg)](http://badge.fury.io/js/lcsv-parser)
+[![Build Status](https://travis-ci.org/ikuo/node-lcsv-parser.svg?branch=master)](https://travis-ci.org/ikuo/node-lcsv-parser)
+
 A parser of key value pairs encoded in 'labeled' CSV format.
 
 ## Installation
